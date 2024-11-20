@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --roxo-200: #8E35FF;
+    --roxo-300: #5a13b4;
+    --roxo-400: #3B1270;
+    --branco-300: #ffffff;
+}
+/*links do inicio*/
+a{
+    color: var(--roxo-300);
+    text-decoration: none;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+ul {
+    list-style-type: none;
+}
+
+h1,h2,p,span {
+    color: #3B1270;
+}
+h1{
+    font-size: 20px;
+    font-weight: 400;
+}
+header {
+    margin: 2% 15%;
+}
+.inputheader {
+    border: none;
+    outline:none;
+    color: var(--roxo-300);
+}
+.pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--roxo-300);
+    opacity: 0.40;
+    padding: 0.1875rem 0.8125rem;
+}
+
+.tamanhosecao {
+    margin: 4% 15%;
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.subtitulo {
+    font-size: 40px;
+    max-width: 65%;
+    font-weight: 300;
+}
+.posicaosubtitulo {
+    display: flex;
+    align-items: flex-end;
+    gap: 8%;
+}
+.tamanhotexto{
+    max-width: 14%;
+    font-size: 8px;
+}
+.animacaoseta {
+    position: relative;
+    animation: movimentoSeta 2s ease-in-out infinite;
+
+}
+@keyframes movimentoSeta{
+    0%{
+        top: -20px;
+    }
+
+    50%{
+        top: 0;
+    }
+
+    100%{
+        top: -40px;
+    }
+}
+.menu{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.displayCarrossel{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.posicaoPersonagem{
+    position: relative;
+    top: -50px;
+}
+
+.preenchimentoCursos{
+    padding: 3% 0;
+}
+
+.tamanhoTituloCarreira{
+    font-size: 2rem;
+}
+
+.letraBranca{
+    color: var(--branco-300);
+}
+
+.tamanhoTituloSoftSkills{
+    font-size: 1.4rem;
+}
+
+.containerNomeCursos{
+    display: flex;
+    padding: 3%;
+    width: 100%;
+    gap: 40px;
+    background-color: #ffffff5c;
+    margin: 5% 0 10%;
+}
+
+.containerBotoes{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.containerSoftSkills{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    gap: 5%;
+    width: 105%;
+}
+
+.containerSkills{    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.textoSkills{
+    opacity: 0.7;
+    font-size: 1.3rem;
+}
+
+.containerNivelSkills{
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.tamanhoEstrela{
+    scale: 1.5;
+}
